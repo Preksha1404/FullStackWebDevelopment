@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<head>
+    <title>Operators and Expression</title>
+</head>
+<body>
+    Enter your age: <input type="text" id="ageId">
+    <button onclick="displayAge()">Check</button>
+    <p id="demo"></p>
+    <script>
+        function displayAge() {
+            var age = parseInt(document.getElementById('ageId').value);
+            var message;
+            if (age < 18) {
+                message = "You are a minor!!";
+              } else if (age >= 18 && age <= 65) {
+                message = "You are an adult!!";
+              } else {
+                message = "You are a senior citizen!!";
+              }
+            var outputElement = document.getElementById("demo");
+            outputElement.innerHTML = message;
+        }
+    </script>
+  </body>
+  </html>

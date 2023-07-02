@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+    <title>Error Handling</title>
+</head>
+<body>
+    Enter any number : <input type="text" id="numId"><br>
+    <button onclick="mydisplay()"> Display !! </button><br>
+    <div id="demoId"></div><br>
+    <script>
+        function mydisplay(){
+            let num=parseInt(document.getElementById('numId').value);
+            let msg=document.getElementById('demoId');
+            msg.innerHTML="";
+            function throwAnError() {
+                if(num<0)
+                throw new Error('You entered negative number!!');
+            }
+            try {
+                throwAnError();
+            } catch (error) {
+                msg.innerHTML=error.message+'<br>';
+                msg.innerHTML+=error.name;
+                console.log(error.message);
+                console.log(error.name); // Error
+            }
+        }
+    </script>
+</body>
+</html>

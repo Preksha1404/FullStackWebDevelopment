@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+    <title>Operators and Expression</title>
+</head>
+<body>
+    Enter number1 : <input type="text" id="numId1"><br>
+    Enter number2 : <input type="text" id="numId2"><br><br>
+    <button onclick="myMath()"> Calculate me!! </button><br>
+    <div id="demo"></div><br>
+    <script>
+        function myMath(){
+            let num1=parseInt(document.getElementById('numId1').value);
+            let num2=parseInt(document.getElementById('numId2').value);
+            let sum=num1+num2;
+            let diff=num1-num2;
+            let product=num1*num2;
+            let quotient=num1/num2;
+
+            //Display content
+            var output = document.getElementById("demo");
+            output.innerHTML += "Sum of number: "+ sum + "<br>";
+            output.innerHTML += "Difference of number: "+ diff + "<br>";
+            output.innerHTML += "Product of number: "+ product + "<br>";
+            output.innerHTML += "Quotient of number: "+ quotient + "<br>";
+        }
+    </script>
+</body>
+</html>

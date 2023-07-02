@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Arrays and Objects</title>
+  </head>
+  <body>
+  <button onclick="displayBooks(['Maths', 'Science', 'Hindi', 'Sanskrit'])">Display Books</button>
+  <div id="bookId"></div>
+  <script>
+    function displayBooks(books) {
+      var booksContainer = document.getElementById("bookId");
+      booksContainer.innerHTML = "";
+
+      for (var i = 0; i < books.length; i++) {
+        var book = books[i];
+        var bookElement = document.createElement("p");
+        bookElement.textContent = book;
+        booksContainer.appendChild(bookElement);
+      }
+    }
+  </script>
+</body>
+</html>

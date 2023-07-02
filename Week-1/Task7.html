@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DOM Manipulation</title>
+  </head>
+  <body>
+    <button id="btn">Click me!!</button><br>
+    <script>
+        const button=document.getElementById('btn');
+        button.addEventListener('click',function displayContent(){
+            let initialText="Click me";
+            if (button.textContent.toLowerCase().includes(initialText.toLowerCase())) {
+                button.textContent = 'Button clicked';
+            } 
+            else {
+                button.textContent = initialText;
+        };
+        });
+    </script>
+</body>
+</html>

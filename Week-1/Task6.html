@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Scope and Hosting</title>
+  </head>
+  <body>
+    <div id="demoId"></div>
+    <script>
+        let carName;
+        function display() {
+            carName="Swift Desire";
+        }
+        display();
+        console.log(carName);
+        document.getElementById('demoId').innerHTML+="The car name is "+carName+'<br>';
+    </script>
+</body>
+</html>
