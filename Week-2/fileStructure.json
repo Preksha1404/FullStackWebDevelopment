@@ -1,0 +1,36 @@
+{
+    "name" : "root",
+    "isFile" : "false",
+    "contents" : [
+        {
+            "name" : "folder1",
+            "isFile" : "false",
+            "contents" : [
+                {
+                    "name" : "file1.txt",
+                    "isFile" : true
+                },
+                {
+                    "name" : "file2.txt",
+                    "isFile" : true
+                }
+            ]
+        },
+        {
+            "name" : "folder2",
+            "isFile" : "false",
+            "contents" :[
+                {
+                    "name" : "subfolder",
+                    "isFile" : "false",
+                    "contents" : [
+                        {
+                            "name" : "file3.txt",
+                            "isFile" : true 
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
